@@ -28,8 +28,8 @@ public class GameSession : MonoBehaviour
     public void LoadGameplayScene(int sceneNo)
     {
         SceneManager.LoadScene(sceneNo);
-        playerName = "Player";  // Reset player name when starting a new game
-        score = 0;
+        PlayerName = "";  // Reset player name when starting a new game
+        Score = 0;
     }
 
     public string PlayerName
