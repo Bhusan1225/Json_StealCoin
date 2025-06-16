@@ -5,8 +5,6 @@ using TMPro;
 
 public class PlayerView : MonoBehaviour
 {
-
-
     PlayerController playerController;
 
     [Header("View")]
@@ -23,7 +21,7 @@ public class PlayerView : MonoBehaviour
     [SerializeField] CameraManager mainCamera;
 
     [Header("Score")]
-    public ScoreManager scoreManager;
+    //public ScoreManager scoreManager;
     public CoinView coinView;
 
  
@@ -36,7 +34,7 @@ public class PlayerView : MonoBehaviour
         playerController = new PlayerController(playerModel, this);
 
 
-        ///////////
+        ///////////JSON
 
         nameText.text = GameSession.instance.PlayerName; // Default name
         scoreText.text = "Score: " + GameSession.instance.Score;

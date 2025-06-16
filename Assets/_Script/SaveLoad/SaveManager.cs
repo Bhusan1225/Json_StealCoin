@@ -29,10 +29,15 @@ public static class SaveManager
     public static PlayerData Load(string name) //load data from json file
     {
         string path = $"{folder}/{name}.json";
-        if (!File.Exists(path)) return null;
-
-        string json = File.ReadAllText(path);
-        
-        return JsonUtility.FromJson<PlayerData>(json); ///////////////////////////////////////returning the player data
+        if (File.Exists(path))
+        {
+            string json = File.ReadAllText(path);
+            return JsonUtility.FromJson<PlayerData>(json);
+            
+        }
+        else
+        {
+            return null;
+        }
     }
 }

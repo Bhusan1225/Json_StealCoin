@@ -8,7 +8,8 @@ public class GameplaySaver : MonoBehaviour
 
     public void SaveAndExit()
     {
-        var gameSession = FindObjectOfType<GameSession>();
+        //var gameSession = FindObjectOfType<GameSession>();
+        var gameSession = GameSession.instance;
 
         // If player name is not set (means it's a new game), get it from input
         if (string.IsNullOrEmpty(gameSession.PlayerName))

@@ -14,16 +14,10 @@ public class PlayerController
     {
         this.playerModel = model;
         this.playerView = view;
-        Start();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
         
     }
 
-    // Update is called once per frame
+ 
     public void Update()
     {
         PlayerMovement();   
@@ -49,8 +43,6 @@ public class PlayerController
         playerModel.player.transform.rotation = Quaternion.RotateTowards(playerModel.player.transform.rotation, playerModel.requiredRotation, 10f * Time.deltaTime);
     }
 
-
-  
 
     public void OnTriggerEnter(Collider other)
     {

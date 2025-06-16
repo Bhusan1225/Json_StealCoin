@@ -9,7 +9,6 @@ public class GameSession : MonoBehaviour
     private string playerName = "Player";
     private int score = 0;
 
-
    // [SerializeField] Button PlayButton;
     void Awake()
     {
@@ -23,8 +22,6 @@ public class GameSession : MonoBehaviour
         }
     }
 
-
-   
     public void LoadGameplayScene(int sceneNo)
     {
         SceneManager.LoadScene(sceneNo);
