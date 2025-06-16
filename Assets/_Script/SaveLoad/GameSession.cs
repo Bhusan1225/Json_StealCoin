@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameSession : MonoBehaviour
@@ -8,7 +9,8 @@ public class GameSession : MonoBehaviour
     private string playerName = "Player";
     private int score = 0;
 
-      
+
+   // [SerializeField] Button PlayButton;
     void Awake()
     {
         if (instance == null) 
@@ -21,6 +23,11 @@ public class GameSession : MonoBehaviour
         }
     }
 
+
+    private void Start()
+    {
+        
+    }
     public void LoadGameplayScene(int sceneNo)
     {
         SceneManager.LoadScene(sceneNo);
