@@ -23,6 +23,7 @@ public static class SaveManager
 
         string json = JsonUtility.ToJson(data);   ///////////////////////////////////////Adding the player data
         File.WriteAllText($"{folder}/{data.playerName}.json", json);
+        //Debug.Log(Application.persistentDataPath + "/saves");
     }
 
     public static PlayerData Load(string name) //load data from json file

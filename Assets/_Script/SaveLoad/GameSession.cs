@@ -24,13 +24,12 @@ public class GameSession : MonoBehaviour
     }
 
 
-    private void Start()
-    {
-        
-    }
+   
     public void LoadGameplayScene(int sceneNo)
     {
         SceneManager.LoadScene(sceneNo);
+        playerName = "Player";  // Reset player name when starting a new game
+        score = 0;
     }
 
     public string PlayerName
