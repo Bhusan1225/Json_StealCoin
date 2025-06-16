@@ -1539,8 +1539,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1802268173}
-        m_TargetAssemblyTypeName: LobbyLoader, Assembly-CSharp
-        m_MethodName: ConfirmLoad
+        m_TargetAssemblyTypeName: LoadGame, Assembly-CSharp
+        m_MethodName: ConfirmLoadGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2001,7 +2001,7 @@ GameObject:
   - component: {fileID: 1802268174}
   - component: {fileID: 1802268173}
   m_Layer: 0
-  m_Name: LobbyLoader
+  m_Name: LoadGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

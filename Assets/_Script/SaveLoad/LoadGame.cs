@@ -2,11 +2,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;      // if using TMP
 
-public class LobbyLoader : MonoBehaviour
+public class LoadGame : MonoBehaviour
 {
     public TMP_InputField nameInput;
 
-    public void ConfirmLoad()
+    public void ConfirmLoadGame()
     {
         var data = SaveManager.Load(nameInput.text);
         if (data != null)
