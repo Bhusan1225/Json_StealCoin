@@ -10,14 +10,18 @@ public class PlayerData
 
 public static class SaveManager
 {
+
+
     private static string folder = Application.persistentDataPath + "/saves";
 
+
+    
     public static void Save(PlayerData data) //save data to json file
     {
         if (!Directory.Exists(folder))
             Directory.CreateDirectory(folder);
 
-        string json = JsonUtility.ToJson(data);
+        string json = JsonUtility.ToJson(data);   ///////////////////////////////////////Adding the player data
         File.WriteAllText($"{folder}/{data.playerName}.json", json);
     }
 
@@ -27,6 +31,7 @@ public static class SaveManager
         if (!File.Exists(path)) return null;
 
         string json = File.ReadAllText(path);
-        return JsonUtility.FromJson<PlayerData>(json);
+        
+        return JsonUtility.FromJson<PlayerData>(json); ///////////////////////////////////////returning the player data
     }
 }

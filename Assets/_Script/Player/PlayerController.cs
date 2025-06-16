@@ -56,10 +56,11 @@ public class PlayerController
     {
         if (other.gameObject.CompareTag("Coin"))
         {
-            Debug.Log("Player got a coin!");
-            
-            playerView.scoreManager.AddScore(10, playerView.scoreText);
-            
+            GameSession.instance.Score += 10;
+            playerView.scoreText.text = "Score: " + GameSession.instance.Score;
+            playerView.coinView.Coin.SetActive(false);
+
+
         }
         else if (other.gameObject.CompareTag("End"))
         {

@@ -24,6 +24,9 @@ public class PlayerView : MonoBehaviour
 
     [Header("Score")]
     public ScoreManager scoreManager;
+    public CoinView coinView;
+
+ 
 
     // Start is called before the first frame update
     void Start()
@@ -50,8 +53,14 @@ public class PlayerView : MonoBehaviour
     {
 
         playerController.OnTriggerEnter(other);
-        FindObjectOfType<GameSession>().Score += 10;
-        scoreText.text = "Score: " + GameSession.instance.Score;
+
+        //if (other.gameObject.CompareTag("Coin"))
+        //{
+        //    FindObjectOfType<GameSession>().Score += 10;
+        //    scoreText.text = "Score: " + GameSession.instance.Score;
+        //    coinView.Coin.SetActive(false);
+        //}
+        
     }
 
     public void SetName(string name)

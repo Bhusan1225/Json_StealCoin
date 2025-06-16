@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.5">
+  <diagram name="Page-1" id="PBTKBfvRJndxsldHCs9E">
+    <mxGraphModel dx="1192" dy="619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-1" value="&lt;h2 data-end=&quot;238&quot; data-start=&quot;204&quot;&gt;1. What are we trying to build?&lt;/h2&gt;&lt;br&gt;&lt;div class=&quot;_tableContainer_16hzy_1&quot;&gt;&lt;div class=&quot;_tableWrapper_16hzy_14 group flex w-fit flex-col-reverse&quot; tabindex=&quot;-1&quot;&gt;&lt;table class=&quot;w-fit min-w-(--thread-content-width)&quot; data-end=&quot;725&quot; data-start=&quot;240&quot;&gt;&lt;thead data-end=&quot;321&quot; data-start=&quot;240&quot;&gt;&lt;tr data-end=&quot;321&quot; data-start=&quot;240&quot;&gt;&lt;th data-col-size=&quot;sm&quot; data-end=&quot;270&quot; data-start=&quot;240&quot;&gt;Button pressed in &lt;strong data-end=&quot;269&quot; data-start=&quot;260&quot;&gt;Lobby&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/strong&gt;&lt;/th&gt;&lt;th data-col-size=&quot;md&quot; data-end=&quot;290&quot; data-start=&quot;270&quot;&gt;What happens next&lt;/th&gt;&lt;th data-col-size=&quot;md&quot; data-end=&quot;321&quot; data-start=&quot;290&quot;&gt;&amp;nbsp;When a save file is written&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody data-end=&quot;725&quot; data-start=&quot;404&quot;&gt;&lt;tr data-end=&quot;525&quot; data-start=&quot;404&quot;&gt;&lt;td data-col-size=&quot;sm&quot; data-end=&quot;434&quot; data-start=&quot;404&quot;&gt;&lt;strong data-end=&quot;423&quot; data-start=&quot;406&quot;&gt;Play New Game&lt;/strong&gt;&lt;/td&gt;&lt;td data-col-size=&quot;md&quot; data-end=&quot;483&quot; data-start=&quot;434&quot;&gt;Jump to Gameplay with &lt;code data-end=&quot;469&quot; data-start=&quot;458&quot;&gt;score = 0&lt;/code&gt;, &lt;code data-end=&quot;482&quot; data-start=&quot;471&quot;&gt;name = &quot;&quot;&lt;/code&gt;&lt;/td&gt;&lt;td data-col-size=&quot;md&quot; data-end=&quot;525&quot; data-start=&quot;483&quot;&gt;After the player dies and types a name&lt;/td&gt;&lt;/tr&gt;&lt;tr data-end=&quot;725&quot; data-start=&quot;526&quot;&gt;&lt;td data-col-size=&quot;sm&quot; data-end=&quot;556&quot; data-start=&quot;526&quot;&gt;&lt;strong data-end=&quot;541&quot; data-start=&quot;528&quot;&gt;Load Game&lt;/strong&gt;&lt;/td&gt;&lt;td data-col-size=&quot;md&quot; data-end=&quot;662&quot; data-start=&quot;556&quot;&gt;Ask for the player’s name →&lt;br&gt;&amp;nbsp;if a file called &lt;strong data-end=&quot;620&quot; data-start=&quot;603&quot;&gt;&lt;code data-end=&quot;618&quot; data-start=&quot;605&quot;&gt;&amp;lt;name&amp;gt;.json&lt;/code&gt;&lt;/strong&gt; exists,&lt;br&gt;jump to Gameplay with that score&lt;/td&gt;&lt;td data-col-size=&quot;md&quot; data-end=&quot;725&quot; data-start=&quot;662&quot;&gt;When the player dies again, we just overwrite the same file&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="20" width="770" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-2" value="&lt;b&gt;Steal Coin&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="218" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-3" value="Main Menu&lt;div&gt;&amp;lt;&amp;lt;Scene&amp;gt;&amp;gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="110" y="310" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-5" value="GameSession&lt;div&gt;&amp;lt;&amp;lt;singleton&amp;gt;&amp;gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-6" value="LoadGame" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-7" value="Play" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="90" y="390" width="120" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mHNQ8f6ZcZOvH9qMeA8S-8" target="mHNQ8f6ZcZOvH9qMeA8S-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-8" value="Load" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="90" y="475" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.022;entryY=0.453;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="mHNQ8f6ZcZOvH9qMeA8S-7" target="mHNQ8f6ZcZOvH9qMeA8S-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-11" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;This will start the new game with 0 socre and&amp;nbsp;&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;no name and when the game over you can add your&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;name and that will save your score and name for future&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="370" y="377" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-12" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;This will loat the game as per the name you enter in the input&amp;nbsp;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="360" y="460" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-13" value="SaveManager&lt;div&gt;&amp;lt;&amp;lt;static c# pure &amp;gt;&amp;gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

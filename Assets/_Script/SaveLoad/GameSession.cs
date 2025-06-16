@@ -3,14 +3,22 @@ using UnityEngine.SceneManagement;
 
 public class GameSession : MonoBehaviour
 {
-    private string playerName = "";
+    public static GameSession instance;  // simple singleton
+
+    private string playerName = "Player";
     private int score = 0;
 
-    public static GameSession instance;          // simple singleton
+      
     void Awake()
     {
-        if (instance == null) { instance = this; DontDestroyOnLoad(gameObject); }
-        else { Destroy(gameObject); }
+        if (instance == null) 
+        { 
+            instance = this; DontDestroyOnLoad(gameObject); 
+        }
+        else 
+        { 
+            Destroy(gameObject); 
+        }
     }
 
     public void LoadGameplayScene(int sceneNo)
