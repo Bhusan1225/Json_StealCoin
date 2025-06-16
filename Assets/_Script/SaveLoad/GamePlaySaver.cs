@@ -22,8 +22,8 @@ public class GameplaySaver : MonoBehaviour
             score = gameSession.Score
         };
 
-        // Save to disk using SaveManager
-        SaveManager.Save(data);
+        // Save on your pc using SaveManager
+        SaveManager.Save(data); 
 
         // Return to Lobby scene
         SceneManager.LoadScene(0);

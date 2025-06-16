@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.5">
   <diagram name="Page-1" id="PBTKBfvRJndxsldHCs9E">
-    <mxGraphModel dx="1192" dy="619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="473" dy="811" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,11 +10,22 @@
         <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-2" value="&lt;b&gt;Steal Coin&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="30" y="218" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-3" value="Main Menu&lt;div&gt;&amp;lt;&amp;lt;Scene&amp;gt;&amp;gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="110" y="310" width="110" height="30" as="geometry" />
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-3" value="" style="html=1;whiteSpace=wrap;align=left;fillColor=#f5f5f5;fontColor=#333333;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="310" width="330" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mHNQ8f6ZcZOvH9qMeA8S-5" target="mHNQ8f6ZcZOvH9qMeA8S-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="410" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-5" value="GameSession&lt;div&gt;&amp;lt;&amp;lt;singleton&amp;gt;&amp;gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="mHNQ8f6ZcZOvH9qMeA8S-6" target="mHNQ8f6ZcZOvH9qMeA8S-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mHNQ8f6ZcZOvH9qMeA8S-6" target="mHNQ8f6ZcZOvH9qMeA8S-13">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-6" value="LoadGame" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="460" width="120" height="60" as="geometry" />
@@ -32,13 +43,46 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-11" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;This will start the new game with 0 socre and&amp;nbsp;&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;no name and when the game over you can add your&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;name and that will save your score and name for future&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="370" y="377" width="270" height="60" as="geometry" />
+          <mxGeometry x="220" y="700" width="270" height="60" as="geometry" />
         </mxCell>
         <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-12" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;This will loat the game as per the name you enter in the input&amp;nbsp;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="360" y="460" width="300" height="30" as="geometry" />
+          <mxGeometry x="220" y="785" width="300" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-13" value="SaveManager&lt;div&gt;&amp;lt;&amp;lt;static c# pure &amp;gt;&amp;gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-15" value="&lt;span style=&quot;text-align: left; text-wrap-mode: wrap;&quot;&gt;Main Menu&lt;/span&gt;&lt;div style=&quot;text-align: left; text-wrap-mode: wrap;&quot;&gt;&amp;lt;&amp;lt;Scene&amp;gt;&amp;gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="270" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mHNQ8f6ZcZOvH9qMeA8S-16" target="mHNQ8f6ZcZOvH9qMeA8S-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-16" value="ButtonManager&lt;div&gt;&amp;lt;&amp;lt;static c# pure &amp;gt;&amp;gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="320" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-17" value="GameSession&lt;div&gt;&amp;lt;&amp;lt;singleton&amp;gt;&amp;gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-18" value="LoadGame" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mHNQ8f6ZcZOvH9qMeA8S-22" target="mHNQ8f6ZcZOvH9qMeA8S-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-22" value="Player view" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="395" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-34" value="Player stores the score" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="570" y="395" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="mHNQ8f6ZcZOvH9qMeA8S-35" target="mHNQ8f6ZcZOvH9qMeA8S-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-35" value="GamePlaySaver" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="505" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-37" value="Saves the game in pc&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="575" y="505" width="140" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
