@@ -84,6 +84,9 @@
         <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-37" value="Saves the game in pc&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="575" y="505" width="140" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="mHNQ8f6ZcZOvH9qMeA8S-40" value="Player view" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="455" y="310" width="120" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
